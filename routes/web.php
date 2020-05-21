@@ -27,4 +27,4 @@ Route::post('/result','ProductController@calculator')->name('result');
 
 Route::get('/dictionary', 'DictionaryController@showForm');
 
-Route::post('/translate', 'DictionaryController@dictionary');
+Route::get('/translate', 'DictionaryController@dictionary');

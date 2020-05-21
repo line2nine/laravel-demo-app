@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Từ điển</h1>
-<form action="/translate" method="post">
+<form action="/translate" method="get">
     @csrf
     <p>
         <input type="text" name="eng">
