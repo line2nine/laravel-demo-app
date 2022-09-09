@@ -48,3 +48,23 @@ function numToStr(array $arr)
         }
         return $newArr;
     }
+
+function sort_array(array $arr, $order)
+    {
+        $newArr = [];
+        if ($order == 'desc') {
+            rsort($arr);
+        } else {
+            sort($arr);
+        }
+        foreach ($arr as $val) {
+            $newArr[] = $val;
+        }
+        return $newArr;
+    }
+
+function insert_first_position(array $arr, $element)
+    {
+        array_unshift($arr, $element);
+        return $arr;
+    }
